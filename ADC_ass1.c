@@ -105,7 +105,7 @@ int main ()
 		else if ((Local_u16AnalogValue > 1875) &&(Local_u16AnalogValue <= 2187))
 		{
 			LCD_voidWriteSpecialChar(1,&Hamosha,LCD_u8_LINE1,6);
-			Motor_ccw();
+			STOP_MOTOR();
 		}
 		else if ((Local_u16AnalogValue > 2187) &&(Local_u16AnalogValue <= 2500))
 		{
@@ -116,12 +116,12 @@ int main ()
 		else if ((Local_u16AnalogValue > 2500) &&(Local_u16AnalogValue <= 2812))
 		{
 			LCD_voidWriteSpecialChar(1,&Hamosha,LCD_u8_LINE1,8);
-			Motor_cw();
+			STOP_MOTOR();
 		}
 		else if ((Local_u16AnalogValue > 2812) &&(Local_u16AnalogValue <= 3125))
 		{
 			LCD_voidWriteSpecialChar(1,&Hamosha,LCD_u8_LINE1,9);
-			Motor_cw();
+			STOP_MOTOR();
 		}
 		else if ((Local_u16AnalogValue > 3125) &&(Local_u16AnalogValue <= 3437))
 		{
